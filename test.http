@@ -1,0 +1,37 @@
+POST http://localhost:3000/tasks
+Content-Type: application/json
+
+{
+    "title": "เขียนโค้ดด้วยmongoose"
+}
+
+###
+
+GET http://localhost:3000/tasks
+
+###
+PUT http://localhost:3000/tasks/6ac0fdd0150e667793a73e4a
+# PUT http://localhost:3000/tasks/<รหัส_id>
+
+###
+DELETE http://localhost:3000/tasks/6acc593486bcad9d52855b29
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2YWNjNTlhODg2YmNhZDlkNTI4NTViMmEiLCJpYXQiOjE3OTE3Nzc0NTIsImV4cCI6MTc5MTc4MTA1Mn0.3VtbJ5xAWIg5nFGKXDtsfS4WxgzeRVpaR2kLasnYuAo
+# DELETE http://localhost:3000/tasks/<รหัส_id>
+
+###
+POST http://localhost:3000/register
+Content-Type: application/json
+
+{
+    "username": "admin2",
+    "password": "password1234"
+}   
+
+###
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+    "username": "admin2",
+    "password": "password1234"
+} 
