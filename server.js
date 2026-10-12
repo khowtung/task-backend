@@ -121,7 +121,8 @@ app.put('/tasks/:id', async (req, res) => {
     }
 });
 
-app.delete('/tasks/:id', verfyToken, async (req, res) => {
+// หน้านี้ยังไม่ได้ทำระบบ Login จึงไม่บังคับ JWT ตอนลบงาน
+app.delete('/tasks/:id', async (req, res) => {
     try {
         const deletedTask = await Task.findByIdAndDelete(req.params.id);
 
